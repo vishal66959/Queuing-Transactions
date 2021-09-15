@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.25/spectre.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="/createUser" method="POST" class="centered mt-10 ml-10 mr-10">
+
+        <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="description">description</label>
+            <input class="form-input" type="text" name="description" id="description" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="text" name="email" id="email" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="wallet">BTC Wallet</label>
+            <input class="form-input" type="text" name="bitcoinWallet" id="bitcoinWallet" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="wallet">ETH Wallet</label>
+            <input class="form-input" type="text" name="ethereumWallet" id="ethereumWallet" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="maxBitcoin">BTC Limit</label>
+            <input class="form-input" type="number" name="maxBitcoin" id="maxBitcoin" pattern="^\d*(\.\d{0,6})?$" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="maxEthereum">ETH Limit</label>
+            <input class="form-input" type="number" name="maxEthereum" id="maxEthereum" pattern="^\d*(\.\d{0,18})?$"  />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="bitcoinBalance">BTC Balance</label>
+            <input class="form-input" type="number" name="bitcoinBalance" id="bitcoinBalance" pattern="^\d*(\.\d{0,6})?$" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="ethereumBalance">ETH Balance</label>
+            <input class="form-input" type="number" name="ethereumBalance" id="ethereumBalance" pattern="^\d*(\.\d{0,18})?$"  />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-input" type="password" name="password" id="password" />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+    </form>
+</body>
+
+</html>

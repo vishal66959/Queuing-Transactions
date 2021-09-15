@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>DashBoard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.25/spectre.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <%= msg %>
+  <h3>This id dashboard</h3>>
+  
+  <form action="/addWallet" method="GET" class="centered mt-10 ml-10 mr-10">            
+    <input type="submit" class="btn btn-primary" value="Add Wallet"/>
+</form>
+<form action="/logout" method="GET" class="centered mt-10 ml-10 mr-10">            
+    <input type="submit" class="btn btn-primary" value="Logout"/>
+</form>
+<form action="/makeTransaction" method="GET" class="centered mt-10 ml-10 mr-10">            
+    <input type="submit" class="btn btn-primary" value="Perform Transaction"/>
+</form>
+<form action="/transactionHistory" method="GET" class="centered mt-10 ml-10 mr-10">            
+  <input type="submit" class="btn btn-primary" value="Transaction History"/>
+</form>
+<form action="/transactionStatus" method="GET" class="centered mt-10 ml-10 mr-10">            
+  <input type="submit" class="btn btn-primary" value="Transaction Status"/>
+</form>
+      
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.25/spectre.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="/transaction" method="POST" class="centered mt-10 ml-10 mr-10">
+
+        <div class="form-group">
+            <label class="form-label" for="currencyAmount">Currency Amount</label>
+            <input class="form-input" type="text" name="currencyAmount" id="currencyAmount" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="currencyType">Currency Type</label>
+            <input class="form-input" type="text" name="currencyType" id="currencyType" />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="targetWallet">Target Wallet</label>
+            <input class="form-input" type="text" name="targetWallet" id="targetWallet" />
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Submit" />
+    </form>
+</body>
+
+</html>
